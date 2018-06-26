@@ -13,6 +13,10 @@
 		5D87720320E2227500579B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D87720220E2227500579B35 /* Assets.xcassets */; };
 		5D87720620E2227500579B35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D87720420E2227500579B35 /* LaunchScreen.storyboard */; };
 		5D87720920E2227500579B35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87720820E2227500579B35 /* main.m */; };
+		5D87721120E2248400579B35 /* NSObject+JXRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87721020E2248400579B35 /* NSObject+JXRuntime.m */; };
+		5D87721420E22C3400579B35 /* UIViewController+Leaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87721320E22C3400579B35 /* UIViewController+Leaks.m */; };
+		5D87721720E2429600579B35 /* UINavigationController+Leaks.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87721620E2429600579B35 /* UINavigationController+Leaks.m */; };
+		5D87721A20E246FB00579B35 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D87721920E246FB00579B35 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		5D87720520E2227500579B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D87720720E2227500579B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D87720820E2227500579B35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D87720F20E2248400579B35 /* NSObject+JXRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JXRuntime.h"; sourceTree = "<group>"; };
+		5D87721020E2248400579B35 /* NSObject+JXRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JXRuntime.m"; sourceTree = "<group>"; };
+		5D87721220E22C3400579B35 /* UIViewController+Leaks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Leaks.h"; sourceTree = "<group>"; };
+		5D87721320E22C3400579B35 /* UIViewController+Leaks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Leaks.m"; sourceTree = "<group>"; };
+		5D87721520E2429600579B35 /* UINavigationController+Leaks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Leaks.h"; sourceTree = "<group>"; };
+		5D87721620E2429600579B35 /* UINavigationController+Leaks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Leaks.m"; sourceTree = "<group>"; };
+		5D87721820E246FB00579B35 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		5D87721920E246FB00579B35 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +74,19 @@
 				5D8771FA20E2227300579B35 /* AppDelegate.m */,
 				5D8771FC20E2227300579B35 /* ViewController.h */,
 				5D8771FD20E2227300579B35 /* ViewController.m */,
+				5D87721820E246FB00579B35 /* TestViewController.h */,
+				5D87721920E246FB00579B35 /* TestViewController.m */,
 				5D8771FF20E2227300579B35 /* Main.storyboard */,
 				5D87720220E2227500579B35 /* Assets.xcassets */,
 				5D87720420E2227500579B35 /* LaunchScreen.storyboard */,
 				5D87720720E2227500579B35 /* Info.plist */,
 				5D87720820E2227500579B35 /* main.m */,
+				5D87720F20E2248400579B35 /* NSObject+JXRuntime.h */,
+				5D87721020E2248400579B35 /* NSObject+JXRuntime.m */,
+				5D87721220E22C3400579B35 /* UIViewController+Leaks.h */,
+				5D87721320E22C3400579B35 /* UIViewController+Leaks.m */,
+				5D87721520E2429600579B35 /* UINavigationController+Leaks.h */,
+				5D87721620E2429600579B35 /* UINavigationController+Leaks.m */,
 			);
 			path = LeakCheckDemo;
 			sourceTree = "<group>";
@@ -141,9 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D87721120E2248400579B35 /* NSObject+JXRuntime.m in Sources */,
 				5D8771FE20E2227300579B35 /* ViewController.m in Sources */,
+				5D87721A20E246FB00579B35 /* TestViewController.m in Sources */,
 				5D87720920E2227500579B35 /* main.m in Sources */,
 				5D8771FB20E2227300579B35 /* AppDelegate.m in Sources */,
+				5D87721720E2429600579B35 /* UINavigationController+Leaks.m in Sources */,
+				5D87721420E22C3400579B35 /* UIViewController+Leaks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
